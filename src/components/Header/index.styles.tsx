@@ -16,7 +16,7 @@ export const SubContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-  max-width: 1440px;
+  max-width: 1120px;
 `;
 
 export const RightContentHeader = styled.div`

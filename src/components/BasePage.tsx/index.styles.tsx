@@ -9,5 +9,5 @@ export const BodyPage = styled.section`
 
 export const Subcontainer = styled.div`
   width: 100%;
-  max-width: 1440px;
+  max-width: 1120px;
 `;
