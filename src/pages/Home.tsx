@@ -11,14 +11,17 @@ export function Home() {
       <>
         <Styled.MainContainer>
           <div>
-            <div>
-              <h1>Encontre o café perfeito para qualquer hora do dia</h1>
+            <Styled.TitleArea>
+              <h1>
+                Encontre o café perfeito <br />
+                para qualquer hora do dia
+              </h1>
               <span>
-                Com o coffe delivery você recebe seu café onde estiver, a
+                Com o coffe delivery você recebe seu café onde estiver, a <br />
                 qualquer hora
               </span>
-            </div>
-            <div>
+            </Styled.TitleArea>
+            <Styled.Items>
               <div>
                 <span>
                   <CircleOrangeCart />
@@ -42,7 +45,7 @@ export function Home() {
                   <CircleCoffePurple />O café chega fresquinho até você
                 </span>
               </div>
-            </div>
+            </Styled.Items>
           </div>
           <img src="/pngs/capa.png" alt="logo de café na capa" />
         </Styled.MainContainer>
