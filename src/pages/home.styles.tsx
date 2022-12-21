@@ -52,3 +52,11 @@ export const Items = styled.div`
     }
   }
 `;
+
+export const CoffesContainer = styled.section`
+  margin-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 32px;
+`;
