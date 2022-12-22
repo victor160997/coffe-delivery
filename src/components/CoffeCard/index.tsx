@@ -1,4 +1,7 @@
 import { useCallback, useState } from "react";
+import { CartPurple } from "../../assets/svgs/CartPurple";
+import { LessPurple } from "../../assets/svgs/LessPurple";
+import { PlusPurple } from "../../assets/svgs/PlusPurple";
 import { CoffeDTO } from "../../interfaces/coffes/CoffeDTO";
 import * as Styled from "./index.styles";
 
@@ -35,13 +38,18 @@ export function CoffeCard({ coffe }: OwnProps) {
             <span>{`R$ ${(coffe.priceInCents / 100)
               .toFixed(2)
               .replace(".", ",")}`}</span>
-            <div>
-              <div>
-                <button onClick={() => addCoffe()}>+</button>
+            <Styled.CartContainer>
+              <Styled.AddContainer>
+                <div onClick={() => addCoffe()}>
+                  <PlusPurple />
+                </div>
                 <p>{quantity}</p>
-                <button onClick={() => lessCoffe()}>-</button>
-              </div>
-            </div>
+                <div onClick={() => lessCoffe()}>
+                  <LessPurple />
+                </div>
+              </Styled.AddContainer>
+              <CartPurple />
+            </Styled.CartContainer>
           </Styled.Price>
         </Styled.PriceCart>
       </Styled.CardSubContainer>

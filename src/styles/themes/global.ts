@@ -15,4 +15,11 @@ export const GlobalStyle = createGlobalStyle`
   button {
     cursor: pointer;
   }
+
+  svg {
+    cursor: pointer;
+    :hover {
+      opacity: 0.5;
+    }
+  }
 `;

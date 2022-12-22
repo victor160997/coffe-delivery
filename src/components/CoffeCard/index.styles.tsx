@@ -80,8 +80,11 @@ export const PriceCart = styled.div`
 `;
 
 export const Price = styled.div`
-  width: max-content;
+  width: 100%;
   height: 31px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   span {
     font-family: "Baloo 2";
     font-style: normal;
@@ -90,5 +93,34 @@ export const Price = styled.div`
     line-height: 130%;
     text-align: right;
     color: #574f4d;
+  }
+`;
+
+export const CartContainer = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+export const AddContainer = styled.div`
+  display: flex;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  gap: 4px;
+  width: 72px;
+  height: 38px;
+  background: #e6e5e5;
+  border-radius: 6px;
+  margin-right: 6px;
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #272221;
   }
 `;
